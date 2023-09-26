@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="top">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This survey is about YAMAHA Personal Commuter motorcycles and your input will be valuable to us and We thank you for filling up the Form.</p>    
+    </div>
+    
+    <!-- Form starts here -->
+    <div id="form-container">
+        <form action="" id="survey-form">
+
+            <label id="name-label" for="Name">Name
+            <input type="text" id="name" placeholder="Enter your Name" required></label>
+    
+            <label id="email-label" for="email">Email
+            <input type="email" id="email" placeholder="Enter your Email" required></label>
+    
+            <label id="number-label" for="Age">Age (optional)
+            <input type="number" id="number" min="18" max="99" placeholder="Enter your Age"></label>
+    
+            <!-- radio here -->
+            <p>What Personal Commuter motorcycles you prefer</p>
+
+            <label class="radio-container">
+                <input type="radio" name="radio" value="mioSeries"> Mio series
+                <span class="checkmark" ></span>
+            </label>
+            
+            <label class="radio-container">
+                <input type="radio" name="radio" value="mtSeries"> MT-Series
+                <span class="checkmark" ></span>
+            </label>
+
+            <label class="radio-container">
+                <input type="radio" name="radio" value="xsrSeries"> XSR-Series
+                <span class="checkmark" ></span>
+            </label>
+
+            <label class="radio-container">
+                <input type="radio" name="radio" value="maxSeries"> Max-Series
+                <span class="checkmark" ></span>
+            </label>
+
+            <label class="radio-container">
+                <input type="radio" name="radio" value="onRoad"> On Road
+                <span class="checkmark" ></span>
+            </label>
+
+            <label class="radio-container">
+                <input type="radio" name="radio" value="offRoad"> Off Road
+                <span class="checkmark" ></span>
+            </label>
+           
+            
+            <label id="dropdown-label" for="dropdown">What motorcycle style you are looking for
+            <select name="max-series" id="dropdown">
+                <option value="0">SELECT AN OPTION</option>
+                <option value="1">Sporty like</option>
+                <option value="2">Scooter</option>
+                <option value="3">Retro</option>
+            </select>
+            </label>
+    
+            
+            <!-- checkbox here -->
+            <fieldset>
+                <p>What specs of a motorcycle that you're looking for (Check all that apply)</p>
+                
+                <label for="">
+                    <input type="checkbox" class="inline" value="looks"> Looks
+                </label>
+                <label for="">
+                    <input type="checkbox" class="inline" value="Weight"> Weight
+                </label>
+                <label for="">
+                    <input type="checkbox" class="inline" value="powerAndTorque"> Power and Torque
+                </label>
+                <label for="">
+                    <input type="checkbox" class="inline" value="seatHeight"> Seat Height
+                </label>
+                </label>
+                <label for="">
+                    <input type="checkbox" class="inline" value="carryingCapacity"> Carrying Capacity
+                </label>
+            </fieldset>
+    
+            <!-- comments here -->
+            <p>Comments</p>
+            <label for="comments">
+                <textarea name="" id="" cols="30" rows="3" placeholder="Let us know what you think about our YAMAHA motorcycles"></textarea>
+                
+            </label>
+    
+    
+    
+            <input type="submit" id="submit" name="submit">
+        </form>
+    </div>
+   
+
+
+
+
+    
+</body>
+</html>
